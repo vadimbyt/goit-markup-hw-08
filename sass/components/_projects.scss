@@ -1,0 +1,44 @@
+.section-projects {
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
+        display: none;  
+    }
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    &__item {
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+}
+
+
+.background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $projects-bg-color;
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $primary-white-color;
+    }
+}

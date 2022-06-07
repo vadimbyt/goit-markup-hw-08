@@ -1,0 +1,24 @@
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        margin-right: 10px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        @include social-media ($primary-white-color);
+    }
+
+    &__link--hover:hover {
+        fill: $primary-white-color;
+        background-color: $accent-color;
+    }
+}

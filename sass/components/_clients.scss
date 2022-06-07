@@ -1,0 +1,47 @@
+.clients {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -15px;
+
+    &__item {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+
+        @media screen and (min-width: 768px){
+        width: calc((100% - 6 * 15px) / 3);
+            margin: 15px;
+        }
+
+         @media screen and (min-width: 1200px){
+        width: calc((100% - 12 * 15px) / 6);
+            margin: 15px;
+        }
+
+    }
+
+ 
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 92px;
+        border: 1px solid $social-media;
+        fill: $social-media;
+        border-radius: 4px;
+
+        transition: fill $animation-time $cubic,
+            background-color $animation-time $cubic;
+    }
+
+    &__link:hover {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
+}
